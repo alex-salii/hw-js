@@ -1,26 +1,29 @@
 //1
 
-var person = [
     var a = {
-       'brand': 'BMW' ,
-       'color': 'red'
+        name: 'BMW',
+        counry: 'Germany',
+        age: '2015'
+
    } ;
     var b = {
-    'age': '2015',
-    'price':'4000'
-    };
-    var c = {
-        'number': '6',
-        'rating': '2'
+        name: 'Ford',
+        counry: 'USA',
+        age: '2014'
     };
 
+    var persons = {
+    a,
+    b,
+    c: { name: "Lada", country: 'Russia', age: "2022" },
+}
 
-]
+console.log(persons);
 
 
 //2
-var person = ['Hi'];
-var arrayLength = person.length;
+//var person = ['Hi'];
+//var arrayLength = person.length;
 for (var i = 0; i < a; i++) {
     console.log(person[i]);
 
@@ -57,7 +60,9 @@ for (var person of persons) {
     console.log(`Person: ${name} ${surname}`);
 
 //4
-
+for (var i in persons) {
+    persons[i].fullName = persons[i].name + ' ' + persons[i].lastName;
+    console.log(persons[i]);
 
 
 //5
@@ -65,18 +70,24 @@ var persons = '{'nam': 'Petro', 'age': 25 }';
 
 //6    
 
-var persons = '{'nam': 'Petro', 'age': 25 }';
-
-var a6 = {
-    'num': '5',
-    'rating': '12',
-    'jasonnn': 'b12'   
-}
+var jsonRespons = '{"name": "Petro","surname": "Prostay","age": "30" }';
+var person1 = JSON.parse(jsonRespons);
+persons.person1 = JSON.parse(jsonRespons);
+console.log(persons);
 
 //7
 
 
 //8
+    function avg2(a, b) {
+        console.log((a + b) / 2);
+    }
+    avg2(2, 8);
+
+
+
+
+//
     var array = [5, 9];
     array.average = () => {
         var total = 0;
@@ -130,11 +141,3 @@ var a6 = {
     alert(sum(1, 2, 3, 4)); 
 
 //12
-    let arr = ['array', 'start', 'amount', 'insert'];
-
-    delete arr[1];
-
-    alert(arr[1]);
-
-
-    alert(arr.length); 
