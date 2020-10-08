@@ -1,0 +1,49 @@
+
+.green {
+    position: absolute;
+
+    border-radius: 50%;
+    width: 320px;
+    height: 320px;
+    background-color: green;
+    z-index: 1;
+}
+.yellow {
+    position: absolute;
+    top: 84px;
+    left: 84px;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    background-color: yellow;
+    z-index: 2;
+}
+.blue {
+	position: absolute;
+    top: 124px;
+    left: 124px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    z-index: 3;
+}
+.red {
+	position: absolute;
+    top: 144px;
+    left: 144px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    z-index: 4;
+}
+#rocket {
+	display: flex;
+	margin: 300px;
+
+}
+.score {
+	display: flex;
+	
+}
